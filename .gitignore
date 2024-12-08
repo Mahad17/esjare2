@@ -1,4 +1,4 @@
-# Logs
+# Ignore log files
 logs
 *.log
 npm-debug.log*
@@ -7,9 +7,18 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Ignore node_modules
 node_modules
-dist
-dist-ssr
+
+# Ignore dist and dist-ssr, but allow dist content
+/dist
+/dist-ssr
+
+# Allow dist folder and its contents
+!/dist/
+!/dist/**
+
+# Ignore other generated files
 *.local
 
 # Editor directories and files
